@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+
+    <!-- <div class="black-friday-section" id="blackFridaySection">
+        <div class="black-friday-content">
+            <div class="offer-text">
+                <span class="black-text">Black</span>
+                <span class="white-text">Friday</span>
+            </div>
+<div class="discount-text">
+    <span class="prefix">Up to</span>
+    <span class="main-percentage">59%</span>
+    <span class="suffix">OFF</span>
+</div>
+
+            <div class="action-section">
+                <a href="#" class="shop-now-btn">
+                    SHOP NOW <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="close-btn" onclick="closeBlackFriday()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="welcome-section" id="welcomeSection">
+        <div class="welcome-content">
+            <div class="welcome-text">
+                Welcome to Maattaam online eCommerce store.
+            </div>
+            <div class="right-section">
+                <div class="follow-us d-flex">
+                    <span>Follow us:</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+        <div class="container">
+            <!-- <a class="navbar-brand logo" href="#"> -->
+                <img src="images/1cd155cfa7d2014817c5bd453e4b686e8291d720.png" class="navbar-brand logo img-fluid" alt="">
+            <!-- </a> -->
+            
+            <div class="nav-center d-flex align-items-center">
+   
+                <div class="dropdown category-dropdown me-3">
+                    <button class="btn category-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- <i class="fas fa-bars"></i> -->
+                        All Category
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Electronics</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Fashion</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-home"></i> Home & Garden</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-car"></i> Automotive</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-gamepad"></i> Sports & Games</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-book"></i> Books</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-heartbeat"></i> Health & Beauty</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-baby"></i> Baby & Kids</a></li>
+                    </ul>
+                </div>
+  
+                <div class="nav-links d-none d-lg-flex">
+                    <!-- <a href="#" class="nav-link me-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Track Order
+                    </a> -->
+                    <a href="#" class="nav-link me-3">
+                        <i class="fas fa-balance-scale"></i>
+                        Compare
+                    </a>
+                    <a href="#" class="nav-link me-3">
+                        <i class="fas fa-headset"></i>
+                        Customer Support
+                    </a>
+                    <a href="#" class="nav-link me-3">
+                        <i class="fas fa-question-circle"></i>
+                        Need Help
+                    </a>
+                </div>
+            </div>
+
+
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <a href="#" class="post-ad-btn">POST AD</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mobileNavMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Track Order
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-balance-scale"></i>
+                        Compare
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-headset"></i>
+                        Customer Support
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-question-circle"></i>
+                        Need Help
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- <div class="navbar-placeholder" id="navbarPlaceholder"></div> -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-heading">World’s Largest Marketplace</h1>
+    <p class="hero-subheading">You can Buy, Sell Anything You Can Think Of.</p>
+
+    <div class="search-box">
+  <form class="row g-2 align-items-center">
+
+    <div class="col-md-5 position-relative">
+      <input type="text" class="form-control no-radius ps-3 pe-5" placeholder="Search for anything...">
+      <i class="fas fa-search position-absolute search-icon"></i>
+    </div>
+
+    <div class="col-md-4 position-relative">
+      <input type="text" class="form-control no-radius ps-3 pe-5" placeholder="Location">
+      <i class="fas fa-map-marker-alt position-absolute location-icon"></i>
+    </div>
+
+
+    <div class="col-md-3 d-grid">
+      <button type="submit" class="btn search-btn no-radius">Search</button>
+    </div>
+  </form>
+</div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <h3 class="fw-bold mb-4 cat-head">CATEGORIES</h3>
+    <div class="owl-carousel category-carousel owl-theme">
+      <!-- Category Item -->
+      <div class="text-center">
+        <img src="images/0bee677af098a5233413b66ca71525d74dd57bea.png" class="category-img" alt="Electronics">
+        <p class="mt-2">Electronics</p>
+      </div>
+      <div class="text-center">
+        <img src="images/f7e5ac2b30c23256c9ec88ed01f7ed75f2ee8d51.png" class="category-img" alt="Vehicles">
+        <p class="mt-2">Vehicles</p>
+      </div>
+      <div class="text-center">
+        <img src="images/2abd3015bf195181703b82d4424fd592df1b0177.png" class="category-img" alt="Property">
+        <p class="mt-2">Property</p>
+      </div>
+      <div class="text-center">
+        <img src="images/19745617944f4e37dfb50c5fc05d37c34422c420.png" class="category-img" alt="Services">
+        <p class="mt-2">Services</p>
+      </div>
+      <div class="text-center">
+        <img src="images/8849fd5bec9bcb8bec090bf3e7490fd29891f4b4.png" class="category-img" alt="Jobs">
+        <p class="mt-2">Jobs</p>
+      </div>
+      <div class="text-center">
+        <img src="images/1afec2ff3e5faf4cb99bcd725b0a090c9d05f52b (1).png" class="category-img" alt="Furnitures">
+        <p class="mt-2">Furnitures</p>
+      </div>
+      <div class="text-center">
+        <img src="images/fc71cead6763f9edd55e30b49442836f3a2dd092.png" class="category-img" alt="Fashion">
+        <p class="mt-2">Fashion</p>
+      </div>
+      <div class="text-center">
+        <img src="images/970e814b3bbe23eb97cb305d27121cedfa17851d.png" class="category-img" alt="Education">
+        <p class="mt-2">Education</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+
+      <div class="col-md-3 mb-4 mb-md-0 ">
+        <img src="images/42c2d52d5f465ac35ffa884c805d48cc0e11c4ea.png" alt="Left Banner" class="img-fluid rounded ">
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex justify-content-between align-items-center mb-3 feature px-4 pb-2">
+          <h5 class="fw-bold mb-0">FEATURED BRANDS</h5>
+          <a href="#" class="text-decoration-none small text-muted">View All</a>
+        </div>
+        <div class="row g-4 px-4">
+          <!-- 10 brand logos -->
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/4b49e8610dcb6eda84289e49d447a8ec4ae42422.png" class="img-fluid" alt="Brand 1">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/7d986511c5c7178a2b26beb5b24b04cf5d0f1f46.png" class="img-fluid" alt="Brand 2">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/73d05b01ae1d6973bc1baa55b5fd12fbccf5944a.png" class="img-fluid" alt="Brand 3">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/1d6d5e6c1bdb7d74db4985a09b2efb145d3cb4b9.png" class="img-fluid" alt="Brand 4">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/7cf1d3f06124f794293ab4766b72ce9df633ab2c.png" class="img-fluid" alt="Brand 5">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/08ec6342b948134b956bfb8ab706b935d3ddacbd.png" class="img-fluid" alt="Brand 6">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/7262949180906af956fdfb6434fca6a6baca9c00.png" class="img-fluid" alt="Brand 7">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/61d342f9164d9cc01af410b84d2af63b6f97586b.png" class="img-fluid" alt="Brand 8">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/52b2c81c8b1ebd4fbd8d8e213980efc8bca89f10.png" class="img-fluid" alt="Brand 9">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="images/2659546bcafa3e23907c4a160292aaa3e0e4e82b (1).png" class="img-fluid" alt="Brand 10">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 mt-4 mt-md-0">
+        <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Right Banner" class="img-fluid rounded">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ads-container">
+        <div class="container">
+            <h2 class="section-title">LATEST ADS</h2>
+            
+            <div class="row">
+    
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/020e7e80a8c22698511bcf64ed2837d83d810dcf.png" alt="Mercedes AMG GT" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/1afec2ff3e5faf4cb99bcd725b0a090c9d05f52b (1).png" alt="Living Room Furniture" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+                
+      
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/4132e9a3cfc334a88621a5f5d0a64690d7a56732.png" alt="White Sports Car" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/1eb979a668ee5cc9ec3ebe6a29ce8d1ca41dc862.png" alt="Ford Mustang" class="ad-image">
+                        <h5 class="ad-title">iPad Pro Mini 6 - Powerful i in hand</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container my-5">
+  <div class="row g-4">
+
+<div class="col-md-6">
+  <div class="promo-section left-section d-flex align-items-center justify-content-end rounded text-white h-100 pe-5">
+    <div class="me-4 mb-3 text-end">
+      <h4 class="mb-2">10% Back</h4>
+      <p class="mb-0">Earn 10% Cash back on <br> Swootech. <a href="#" class="text-white text-decoration-underline">Learn How</a></p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="col-md-6">
+      <div class="promo-section rights-section d-flex align-items-center justify-content-between rounded p-4 text-white h-100 flex-column flex-md-row">
+        <div>
+          <div class="d-flex">
+            <h5 class="fw-bold mb-2">Download <br> our app</h5>
+          <p class="ps-5">Enter your phone number and we'll <br> send you a download link.</p>
+          </div>
+          <div class="d-flex mt-2">
+            <div class="input-wrapper">
+  <input type="text" class="form-control custom-input" placeholder="(+xx) xxx..." />
+  <a href="#" class="send-link">SEND LINK</a>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ads-container">
+        <div class="container">
+            
+            
+            <div class="row">
+    
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/020e7e80a8c22698511bcf64ed2837d83d810dcf.png" alt="Mercedes AMG GT" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/1afec2ff3e5faf4cb99bcd725b0a090c9d05f52b (1).png" alt="Living Room Furniture" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+                
+      
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/4132e9a3cfc334a88621a5f5d0a64690d7a56732.png" alt="White Sports Car" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/1afec2ff3e5faf4cb99bcd725b0a090c9d05f52b (1).png" alt="Living Room Furniture" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/1afec2ff3e5faf4cb99bcd725b0a090c9d05f52b (1).png" alt="Living Room Furniture" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/1afec2ff3e5faf4cb99bcd725b0a090c9d05f52b (1).png" alt="Living Room Furniture" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/1afec2ff3e5faf4cb99bcd725b0a090c9d05f52b (1).png" alt="Living Room Furniture" class="ad-image">
+                        <h5 class="ad-title">Zumac Steel Computer Case</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                
+                
+            
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="ad-card">
+                        <img src="images/1eb979a668ee5cc9ec3ebe6a29ce8d1ca41dc862.png" alt="Ford Mustang" class="ad-image">
+                        <h5 class="ad-title">iPad Pro Mini 6 - Powerful i in hand</h5>
+                        <div class="ad-price">
+                            <i class="fas fa-shopping-bag icon"></i>
+                            <span class="price-text">Rs 12,676878</span>
+                        </div>
+                        <div class="ad-category">
+                            <i class="fas fa-car icon"></i>
+                            <span class="category-text">Vehicle</span>
+                        </div>
+                        <div class="ad-location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span class="location-text">India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="container bottom-promo-section my-5 py-5">
+  <div class="row d-flex align-items-center ps-md-5" >
+    <div class="col-md-6 ps-md-5">
+      <button class="bottom-badge-btn mb-3">SAVE UP TO $200.00</button>
+      <h2 class="bottom-product-title">Macbook Pro</h2>
+      <p class="bottom-product-desc">
+        Apple M1 Max Chip. 32GB Unified Memory, 1TB SSD Storage
+      </p>
+      <button class="bottom-shop-btn mt-3">
+        SHOP NOW <span class="ms-2">&rarr;</span>
+      </button>
+    </div>
+    <div class="col-md-6">
+      <img src="images/85b0d3b5fbf2d4a308ed09b8dd0b0ff62d7ea9d4.png" alt="Macbook Pro" class="img-fluid" />
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    
+
+
+<div class="container-fluid subscribe-banner ">
+  <div class="d-flex justify-content-around align-items-center px-4 flex-wrap py-3">
+    <div class="subscribe-text text-white ">
+      <strong>Subscribe</strong> & Get <span class="discount">10% OFF</span> for first order
+    </div>
+    <div class="subscribe-img">
+      <img src="images/b7b301176effb21b1deeaefaa655206e786c5b6d.png" alt="Subscribe Icon" class="img-fluid" />
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Logo and Contact -->
+      <div class="col-md-4 px-5">
+        <div class="footer-logo mb-3">
+          <img src="images/b960edd60ad6657f9f5cf512d2119bed172e4daa (1).png" alt="Logo" style="max-height: 40px;">
+        </div>
+        <p class="text-muted mb-1">HOTLINE 24/7</p>
+        <p class="fw-bold y mb-2" style="color: #4B3EC4;">(025) 3686 25 16</p>
+        <p class="text-muted mb-1">257 Thatcher Road St, Brooklyn, Manhattan, NY 10092</p>
+        <p class="text-muted">contact@swateletrco.com</p>
+
+        <div class="social-icons d-flex gap-2 mt-3">
+          <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Top Categories</h6>
+        <ul class="list-unstyled text-muted">
+          <li>TV/Televisions</li>
+          <li>Computers</li>
+          <li>Laptops</li>
+          <li>Mobiles & Tablets</li>
+          <li>Audios</li>
+          <li>Cameras</li>
+          <li>Gadget</li>
+          <li>Sport Equipments</li>
+          <li>Office</li>
+          <li>Smart Home</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Company</h6>
+        <ul class="list-unstyled text-muted">
+          <li>About Maattaam</li>
+          <li>Contact</li>
+          <li>Career</li>
+          <li>Blog</li>
+          <li>Sitemap</li>
+          <li>Store Locations</li>
+        </ul>
+      </div>
+
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Help Center</h6>
+        <ul class="list-unstyled text-muted">
+          <li>Customer Service</li>
+          <li>Policy</li>
+          <li>Terms & Conditions</li>
+          <li>Track Order</li>
+          <li>FAQs</li>
+          <li>My Account</li>
+          <li>Product Support</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Partner</h6>
+        <ul class="list-unstyled text-muted">
+          <li>Become Seller</li>
+          <li>Affiliate</li>
+          <li>Advertise</li>
+          <li>Partnership</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<section class="footer-bottom-section py-3">
+  <div class="container">
+    <div class="row align-items-center justify-content-center text-center text-md-start py-md-3">
+
+      <div class="col-md-4 mb-2 mb-md-0">
+        <small class="text-muted">© 2024 Maattaam. All Rights Reserved</small>
+      </div>
+
+
+      <div class="col-md-4 d-flex justify-content-center flex-wrap gap-3">
+        <img src="images/4f88470ef7ca7089c358161cd638255e61147b79.png" alt="Payment 1" class="payment-icon" />
+        <img src="images/6bd6f9a9a1d8c62348529d351a6bbed14866b496.png" alt="Payment 2" class="payment-icon" />
+        <img src="images/5b9d40ecdd1b5c0980dfc3ae57c167489f831783.png" alt="Payment 3" class="payment-icon" />
+        <img src="images/3b5e4d8866baeaa152d51cf08f5031769fbf6263.png" alt="Payment 4" class="payment-icon" />
+        <img src="images/647ccd9eac28cd11f9fb6cd49c52dea670811cb9.png" alt="Payment 5" class="payment-icon" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+ 
+        function closeBlackFriday() {
+            document.getElementById('blackFridaySection').style.display = 'none';
+        }
+
+
+        window.addEventListener('scroll', function() {
+            const mainNavbar = document.getElementById('mainNavbar');
+            const blackFridaySection = document.getElementById('blackFridaySection');
+            const welcomeSection = document.getElementById('welcomeSection');
+            
+
+            let offsetTop = 0;
+            if (blackFridaySection.style.display !== 'none') {
+                offsetTop += blackFridaySection.offsetHeight;
+            }
+            offsetTop += welcomeSection.offsetHeight;
+
+            if (window.pageYOffset >= offsetTop) {
+                mainNavbar.classList.add('fixed');
+    
+                document.body.style.paddingTop = mainNavbar.offsetHeight + 'px';
+            } else {
+                mainNavbar.classList.remove('fixed');
+                document.body.style.paddingTop = '0';
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+        });
+
+
+
+
+
+ $(document).ready(function(){
+    $(".category-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000, 
+      autoplayHoverPause: true,
+      smartSpeed: 600,
+      touchDrag: true,
+      mouseDrag: true,
+      navText: [
+        '<div class="custom-nav-btn left-nav"><i class="fas fa-chevron-left"></i></div>',
+        '<div class="custom-nav-btn right-nav"><i class="fas fa-chevron-right"></i></div>'
+      ],
+      responsive: {
+        0: { items: 2 },
+        576: { items: 4 },
+        768: { items: 4 },
+        992: { items: 6 },
+        1200: { items: 7 }
+      }
+    });
+  });
+    </script>
+</body>
+</html>
