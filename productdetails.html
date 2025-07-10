@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Detail Carousel</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="productdetails.css">
+
+
+</head>
+<body>
+
+  <div class="welcome-section" id="welcomeSection">
+        <div class="welcome-content">
+            <div class="welcome-text">
+                Welcome to Maattaam online eCommerce store.
+            </div>
+            <div class="right-section">
+                <div class="follow-us d-flex">
+                    <span>Follow us:</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+        <div class="container">
+            <!-- <a class="navbar-brand logo" href="#"> -->
+                <img src="images/1cd155cfa7d2014817c5bd453e4b686e8291d720.png" class="navbar-brand logo img-fluid" alt="">
+            <!-- </a> -->
+            
+            <div class="nav-center d-flex align-items-center">
+   
+                <div class="dropdown category-dropdown me-3">
+                    <button class="btn category-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- <i class="fas fa-bars"></i> -->
+                        All Category
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Electronics</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Fashion</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-home"></i> Home & Garden</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-car"></i> Automotive</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-gamepad"></i> Sports & Games</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-book"></i> Books</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-heartbeat"></i> Health & Beauty</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-baby"></i> Baby & Kids</a></li>
+                    </ul>
+                </div>
+  
+                <div class="nav-links d-none d-lg-flex">
+                    <!-- <a href="#" class="nav-link me-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Track Order
+                    </a> -->
+                    <a href="#" class="nav-link me-3">
+                        <i class="fas fa-balance-scale"></i>
+                        Compare
+                    </a>
+                    <a href="#" class="nav-link me-3">
+                        <i class="fas fa-headset"></i>
+                        Customer Support
+                    </a>
+                    <a href="#" class="nav-link me-3">
+                        <i class="fas fa-question-circle"></i>
+                        Need Help
+                    </a>
+                </div>
+            </div>
+
+
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <a href="#" class="post-ad-btn">POST AD</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mobileNavMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Track Order
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-balance-scale"></i>
+                        Compare
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-headset"></i>
+                        Customer Support
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-question-circle"></i>
+                        Need Help
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container my-5 position-relative">
+
+  <div class="carousel-icons d-flex position-absolute top-0 end-0 p-2 z-3">
+    <button class="btn" title="Add to Favorites"><i class="bi bi-heart-fill"></i></button>
+    <button class="btn" title="Share"><i class="bi bi-share-fill"></i></button>
+  </div>
+
+
+  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="images/08ec6342b948134b956bfb8ab706b935d3ddacbd.png" class="d-block w-100" alt="Image 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" class="d-block w-100" alt="Image 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" class="d-block w-100" alt="Image 3" />
+      </div>
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <div class="container my-4">
+
+  <div class="row mb-3">
+
+    <div class="col-md-8">
+      <div class="bg-white p-3 rounded shadow-sm">
+        <span class="badge bg-warning text-dark fw-bold px-3 py-2 mb-2">FEATURED</span>
+        <h3 class="fw-bold mb-1">Honda Hornet 2.0 (2025)</h3>
+        <p class="text-muted">
+          <i class="bi bi-fuel-pump-fill me-1"></i> PETROL
+        </p>
+      </div>
+    </div>
+
+ 
+    <div class="col-md-4">
+      <div class="bg-white p-3 rounded shadow-sm h-100 d-flex align-items-center justify-content-center">
+        <h1 class="fw-bold text-dark mb-0">₹ 1,83,967</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-8">
+
+      <div class="card mb-4">
+        <div class="card-header fw-bold fs-4">
+          Overview
+        </div>
+        <div class="card-body">
+          <div class="row text-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+              <i class="bi bi-speedometer2 fs-4 d-block mb-2"></i>
+              <div class="text-muted">mileage</div>
+              <div class="fw-bold">0 km</div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+              <i class="bi bi-geo-alt fs-4 d-block mb-2"></i>
+              <div class="text-muted">Location</div>
+              <div class="fw-bold">Shahdara, Delhi</div>
+            </div>
+            <div class="col-md-4">
+              <i class="bi bi-calendar-event fs-4 d-block mb-2"></i>
+              <div class="text-muted">Posting date</div>
+              <div class="fw-bold">16-JUN-25</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header fw-bold fs-4">
+          Description
+        </div>
+        <div class="card-body">
+          <p>Get Exciting Offers!!</p>
+          <p><strong>Honda Hornet 2.0 -</strong> Aggressive Looks. Fierce Performance.</p>
+          <p>The Honda Hornet 2.0 is a streetfighter with aggressive looks, agile handling, and a punchy 184cc engine that delivers thrilling city rides and sharp cornering control. Designed for the bold, built for the fast.</p>
+          <ul class="list-unstyled mb-0">
+            <li><strong>Engine Capacity:</strong> 184.4 cc</li>
+            <li><strong>Mileage:</strong> 42.3 kmpl</li>
+            <li><strong>Transmission:</strong> 5 Speed Manual</li>
+            <li><strong>Kerb Weight:</strong> 142 kg</li>
+            <li><strong>Fuel Tank Capacity:</strong> 12 litres</li>
+            <li><strong>Seat Height:</strong> 790 mm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mt-4 mt-lg-0">
+  <div class="card text-center shadow-sm"> 
+    <div class="card-body">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div class="d-flex align-items-center">
+          <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Logo" class="rounded-circle me-2" width="50" height="50" /> 
+          <div class="text-start">
+            <div class="small text-muted">Posted By</div>
+            <div class="fw-bold text-primary">BikeWale</div>
+            <div class="text-muted small">Member since Dec 2024</div>
+          </div>
+        </div>
+        <i class="bi bi-chevron-right"></i>
+      </div>
+      <hr />
+      <!-- Optional: Uncomment if needed later
+      <div>
+        <h5 class="fw-bold mb-0 text-primary">17593</h5>
+        <small class="text-muted">Items listed</small>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+
+
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card p-4">
+        <h4 class="section-title">Related ads</h4>
+
+      
+        <div class="owl-carousel owl-theme" id="relatedAdsOwl">
+
+          <div class="item">
+            <div class="ad-card">
+              <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Ad 1" class="ad-image" />
+              <h5 class="ad-title">Brand New Hornet 2.0 2025</h5>
+              <div class="ad-price">
+                <i class="fas fa-shopping-bag icon"></i>
+                <span class="price-text">₹ 1,83,967</span>
+              </div>
+              <div class="ad-category">
+                <i class="fas fa-car icon"></i>
+                <span class="category-text">Vehicle</span>
+              </div>
+              <div class="ad-location">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <span class="location-text">India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="ad-card">
+              <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Ad 1" class="ad-image" />
+              <h5 class="ad-title">Brand New Hornet 2.0 2025</h5>
+              <div class="ad-price">
+                <i class="fas fa-shopping-bag icon"></i>
+                <span class="price-text">₹ 1,83,967</span>
+              </div>
+              <div class="ad-category">
+                <i class="fas fa-car icon"></i>
+                <span class="category-text">Vehicle</span>
+              </div>
+              <div class="ad-location">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <span class="location-text">India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="ad-card">
+              <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Ad 1" class="ad-image" />
+              <h5 class="ad-title">Brand New Hornet 2.0 2025</h5>
+              <div class="ad-price">
+                <i class="fas fa-shopping-bag icon"></i>
+                <span class="price-text">₹ 1,83,967</span>
+              </div>
+              <div class="ad-category">
+                <i class="fas fa-car icon"></i>
+                <span class="category-text">Vehicle</span>
+              </div>
+              <div class="ad-location">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <span class="location-text">India</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="ad-card">
+              <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Ad 1" class="ad-image" />
+              <h5 class="ad-title">Brand New Hornet 2.0 2025</h5>
+              <div class="ad-price">
+                <i class="fas fa-shopping-bag icon"></i>
+                <span class="price-text">₹ 1,83,967</span>
+              </div>
+              <div class="ad-category">
+                <i class="fas fa-car icon"></i>
+                <span class="category-text">Vehicle</span>
+              </div>
+              <div class="ad-location">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <span class="location-text">India</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="ad-card">
+              <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Ad 1" class="ad-image" />
+              <h5 class="ad-title">Brand New Hornet 2.0 2025</h5>
+              <div class="ad-price">
+                <i class="fas fa-shopping-bag icon"></i>
+                <span class="price-text">₹ 1,83,967</span>
+              </div>
+              <div class="ad-category">
+                <i class="fas fa-car icon"></i>
+                <span class="category-text">Vehicle</span>
+              </div>
+              <div class="ad-location">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <span class="location-text">India</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <button class="custom-owl-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="custom-owl-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Logo and Contact -->
+      <div class="col-md-4 px-5">
+        <div class="footer-logo mb-3">
+          <img src="images/b960edd60ad6657f9f5cf512d2119bed172e4daa (1).png" alt="Logo" style="max-height: 40px;">
+        </div>
+        <p class="text-muted mb-1">HOTLINE 24/7</p>
+        <p class="fw-bold y mb-2" style="color: #4B3EC4;">(025) 3686 25 16</p>
+        <p class="text-muted mb-1">257 Thatcher Road St, Brooklyn, Manhattan, NY 10092</p>
+        <p class="text-muted">contact@swateletrco.com</p>
+
+        <div class="social-icons d-flex gap-2 mt-3">
+          <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Top Categories</h6>
+        <ul class="list-unstyled text-muted">
+          <li>TV/Televisions</li>
+          <li>Computers</li>
+          <li>Laptops</li>
+          <li>Mobiles & Tablets</li>
+          <li>Audios</li>
+          <li>Cameras</li>
+          <li>Gadget</li>
+          <li>Sport Equipments</li>
+          <li>Office</li>
+          <li>Smart Home</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Company</h6>
+        <ul class="list-unstyled text-muted">
+          <li>About Maattaam</li>
+          <li>Contact</li>
+          <li>Career</li>
+          <li>Blog</li>
+          <li>Sitemap</li>
+          <li>Store Locations</li>
+        </ul>
+      </div>
+
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Help Center</h6>
+        <ul class="list-unstyled text-muted">
+          <li>Customer Service</li>
+          <li>Policy</li>
+          <li>Terms & Conditions</li>
+          <li>Track Order</li>
+          <li>FAQs</li>
+          <li>My Account</li>
+          <li>Product Support</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Partner</h6>
+        <ul class="list-unstyled text-muted">
+          <li>Become Seller</li>
+          <li>Affiliate</li>
+          <li>Advertise</li>
+          <li>Partnership</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<section class="footer-bottom-section py-3">
+  <div class="container">
+    <div class="row align-items-center justify-content-center text-center text-md-start py-md-3">
+
+      <div class="col-md-4 mb-2 mb-md-0">
+        <small class="text-muted">© 2024 Maattaam. All Rights Reserved</small>
+      </div>
+
+
+      <div class="col-md-4 d-flex justify-content-center flex-wrap gap-3">
+        <img src="images/4f88470ef7ca7089c358161cd638255e61147b79.png" alt="Payment 1" class="payment-icon" />
+        <img src="images/6bd6f9a9a1d8c62348529d351a6bbed14866b496.png" alt="Payment 2" class="payment-icon" />
+        <img src="images/5b9d40ecdd1b5c0980dfc3ae57c167489f831783.png" alt="Payment 3" class="payment-icon" />
+        <img src="images/3b5e4d8866baeaa152d51cf08f5031769fbf6263.png" alt="Payment 4" class="payment-icon" />
+        <img src="images/647ccd9eac28cd11f9fb6cd49c52dea670811cb9.png" alt="Payment 5" class="payment-icon" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+<script>
+
+
+
+        window.addEventListener('scroll', function() {
+    const mainNavbar = document.getElementById('mainNavbar');
+    const welcomeSection = document.getElementById('welcomeSection');
+    
+    // Only use welcomeSection height now
+    const offsetTop = welcomeSection.offsetHeight;
+
+    if (window.pageYOffset >= offsetTop) {
+        mainNavbar.classList.add('fixed');
+        document.body.style.paddingTop = mainNavbar.offsetHeight + 'px';
+    } else {
+        mainNavbar.classList.remove('fixed');
+        document.body.style.paddingTop = '0';
+    }
+});
+
+
+
+  $(document).ready(function () {
+    const owl = $("#relatedAdsOwl");
+
+    owl.owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: false,  // We'll use custom buttons
+      dots: false,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        768: { items: 3 },
+        992: { items: 4 }
+      }
+    });
+
+    $(".custom-owl-prev").click(function () {
+      owl.trigger("prev.owl.carousel");
+    });
+
+    $(".custom-owl-next").click(function () {
+      owl.trigger("next.owl.carousel");
+    });
+  });
+</script>
+
+</body>
+</html>
