@@ -112,7 +112,7 @@ html, body {
             padding: 5px;
         }
 
-        /* Welcome Section */
+
         .welcome-section {
             background: #4B3EC4;
             color: white;
@@ -306,7 +306,6 @@ html, body {
             border-radius: 10px;
         }
 
-        /* Mobile Menu Toggle */
         .mobile-menu-toggle {
             display: none;
             background: none;
@@ -366,7 +365,7 @@ html, body {
 
             .welcome-content {
                 /* flex-direction: column; */
-                gap: 4px;
+                gap: 2px;
                 padding: 0 10px;
             }
 
@@ -445,6 +444,10 @@ html, body {
                 padding: 5px 10px;
                 font-size: 11px;
             }
+            .welcome-text{
+                font-size: 8px !important;
+
+            }
 
             .black-friday-content {
                 gap: 5px;
@@ -480,7 +483,7 @@ html, body {
 
     #mobileNavMenu .nav-link {
         text-align: center;
-        padding: 12px 0;  /* Remove left/right padding */
+        padding: 12px 0;  
         margin: 0 auto;
         display: block;
         width: 100%;
@@ -505,20 +508,16 @@ html, body {
 @media (max-width: 991.98px) {
     .navbar-brand.logo {
         width: 180px;
-        height: auto; /* Maintain aspect ratio */
+        height: auto; 
     }
 }
 
 @media (max-width: 576px) {
     .navbar-brand.logo {
-        width: 110px;
+        width: 90px;
         height: auto;
     }
 }
-
-
-
-
 
 
 
