@@ -14,6 +14,8 @@
 
 
 
+
+
 </head>
 <body>
 <!-- 
@@ -44,7 +46,7 @@
     <div class="welcome-section" id="welcomeSection">
         <div class="welcome-content">
             <div class="welcome-text">
-                Welcome to Maattaam online eCommerce store.
+                Welcome to Maattaam India’s First user friendly marketplace
             </div>
             <div class="right-section">
                 <div class="follow-us d-flex">
@@ -94,10 +96,10 @@
                         <i class="fas fa-map-marker-alt"></i>
                         Track Order
                     </a> -->
-                    <a href="#" class="nav-link me-3">
+                    <!-- <a href="#" class="nav-link me-3">
                         <i class="fas fa-balance-scale"></i>
                         Compare
-                    </a>
+                    </a> -->
                     <a href="#" class="nav-link me-3">
                         <i class="fas fa-headset"></i>
                         Customer Support
@@ -110,27 +112,80 @@
             </div>
 
 
+<form class="search-form d-none d-lg-flex" action="/search" method="GET">
+  <input type="text" name="q" class="search-input" placeholder="Search Products" required />
+  <button type="submit" class="searchs-btn">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
+
+
+
+
+
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             
             <a href="#" class="post-ad-btn">POST AD</a>
+
+
+            <div class="d-none d-lg-flex">
+                          <a href="/login" class="login-btn d-flex align-items-center ms-3">
+              <i class="fas fa-user me-2"></i>
+              Login
+            </a>
+            </div>
+
+
+<!-- 
+<div class="dropdown user-dropdown hover-dropdown ms-3">
+
+  <a href="/profile" class="user-toggle d-flex align-items-center" id="userDropdown">
+    <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Profile" class="user-img" />
+  </a>
+
+  <button class="dropdown-toggle-btn" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fas fa-chevron-down"></i>
+  </button>
+
+
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+    <li><a class="dropdown-item" href="/profile">View Profile</a></li>
+    <li><a class="dropdown-item" href="/my-ads">My Ads</a></li>
+    <li><a class="dropdown-item" href="/settings">Settings</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="/logout">Logout</a></li>
+  </ul>
+</div> -->
+
+
+
         </div>
 
         <div class="collapse navbar-collapse" id="mobileNavMenu">
             <ul class="navbar-nav ms-auto">
+
+              <form class="search-form d-block d-lg-none mx-4" action="/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Search Products" required />
+                <button type="submit" class="searchs-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+
+
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         <i class="fas fa-map-marker-alt"></i>
                         Track Order
                     </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#">
                         <i class="fas fa-balance-scale"></i>
                         Compare
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         <i class="fas fa-headset"></i>
@@ -143,6 +198,16 @@
                         Need Help
                     </a>
                 </li>
+
+
+
+              <hr>
+              <div class=" d-flex d-lg-none mx-4 mt-3 text-center justify-content-center">
+                  <a href="/login" class="login-btn   ">
+                    <i class="fas fa-user me-2"></i>
+                    Login
+                  </a>
+              </div>
             </ul>
         </div>
     </nav>
@@ -750,10 +815,10 @@
   <div class="container">
     <div class="row gy-4">
 
-      <!-- Logo and Contact -->
+
       <div class="col-md-4 px-5">
         <div class="footer-logo mb-3">
-          <img src="images/b960edd60ad6657f9f5cf512d2119bed172e4daa (1).png" alt="Logo" style="max-height: 40px;">
+          <img src="images/Maataam1.png" alt="Logo" style="max-height: 40px;">
         </div>
         <p class="text-muted mb-1">HOTLINE 24/7</p>
         <p class="fw-bold y mb-2" style="color: #4B3EC4;">(025) 3686 25 16</p>
@@ -794,7 +859,7 @@
           <li>Career</li>
           <li>Blog</li>
           <li>Sitemap</li>
-          <li>Store Locations</li>
+
         </ul>
       </div>
 
@@ -812,15 +877,7 @@
         </ul>
       </div>
 
-      <div class="col-6 col-md-2 px-5">
-        <h6 class="fw-bold mb-4">Partner</h6>
-        <ul class="list-unstyled text-muted">
-          <li>Become Seller</li>
-          <li>Affiliate</li>
-          <li>Advertise</li>
-          <li>Partnership</li>
-        </ul>
-      </div>
+      
 
     </div>
   </div>
@@ -839,13 +896,13 @@
       </div>
 
 
-      <div class="col-md-4 d-flex justify-content-center flex-wrap gap-3">
+      <!-- <div class="col-md-4 d-flex justify-content-center flex-wrap gap-3">
         <img src="images/4f88470ef7ca7089c358161cd638255e61147b79.png" alt="Payment 1" class="payment-icon" />
         <img src="images/6bd6f9a9a1d8c62348529d351a6bbed14866b496.png" alt="Payment 2" class="payment-icon" />
         <img src="images/5b9d40ecdd1b5c0980dfc3ae57c167489f831783.png" alt="Payment 3" class="payment-icon" />
         <img src="images/3b5e4d8866baeaa152d51cf08f5031769fbf6263.png" alt="Payment 4" class="payment-icon" />
         <img src="images/647ccd9eac28cd11f9fb6cd49c52dea670811cb9.png" alt="Payment 5" class="payment-icon" />
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
