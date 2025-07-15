@@ -1,0 +1,101 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Your Ad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="postad.css">
+
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center mb-4">POST YOUR AD</h2>
+
+  <div class="row">
+
+    <div class="col-md-6 mb-4 mb-md-0">
+      <div class="category-box">
+        <div class="category-header">CHOOSE A CATEGORY</div>
+
+ 
+        <div class="category-item active-category" onclick="showSubcategories('cars')">
+          <div><i class="bi bi-car-front category-icon"></i> Cars</div>
+          <div class="right-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+        <div class="category-item" onclick="showSubcategories('properties')">
+          <div><i class="bi bi-house-door category-icon"></i> Properties</div>
+          <div class="right-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+        <div class="category-item" onclick="showSubcategories('mobiles')">
+          <div><i class="bi bi-phone category-icon"></i> Mobiles</div>
+          <div class="right-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+        <div class="category-item" onclick="showSubcategories('jobs')">
+          <div><i class="bi bi-briefcase category-icon"></i> Jobs</div>
+          <div class="right-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+        <div class="category-item" onclick="showSubcategories('bikes')">
+          <div><i class="bi bi-bicycle category-icon"></i> Bikes</div>
+          <div class="right-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6">
+      <div class="category-box">
+        <div class="category-header">SUBCATEGORIES</div>
+
+        <div id="subcategoryContainer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const subcategories = {
+    cars: ['Sedan', 'SUV', 'Hatchback', 'Convertible'],
+    properties: ['Apartments', 'Land', 'Commercial Buildings', 'PG & Rooms'],
+    mobiles: ['Smartphones', 'Feature Phones', 'Mobile Accessories', 'Tablets'],
+    jobs: ['IT Jobs', 'BPO & Call Center', 'Sales Jobs', 'Delivery Jobs'],
+    bikes: ['Scooters', 'Sport Bikes', 'Cruisers', 'Electric Bikes']
+  };
+
+  function showSubcategories(categoryKey) {
+
+    document.querySelectorAll('.category-item').forEach(el => el.classList.remove('active-category'));
+    event.currentTarget.classList.add('active-category');
+
+    const container = document.getElementById('subcategoryContainer');
+    const items = subcategories[categoryKey] || [];
+
+    container.innerHTML = '';
+    items.forEach(item => {
+      container.innerHTML += `
+        <div class="category-item">
+          <div>${item}</div>
+        </div>`;
+    });
+  }
+
+  window.onload = () => {
+    showSubcategories('cars');
+  };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .form-box {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .section-divider {
+      border-top: 1px solid #e0e0e0;
+      margin: 30px 0;
+    }
+
+    .form-label {
+      font-weight: 500;
+    }
+
+    .action-buttons button{
+        background-color: rgb(19, 19, 19);
+        color: white;
+        border: none;
+    }
+
+    .btn-outline-primary {
+      min-width: 100px;
+    }
+
+    @media (max-width: 576px) {
+      .btn-block-sm {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .action-buttons {
+        flex-direction: column-reverse;
+        gap: 10px;
+        align-items: stretch;
+      }
+
+      .form-box {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <div class="form-box">
+    <h4 class="mb-4 fw-bold">Edit Profile</h4>
+    <div class="section-divider"></div>
+
+    <form action="">
+    <h6 class="mb-3 fw-bold">Basic information</h6>
+    <div class="mb-3">
+  
+      <input type="text" class="form-control" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+     
+      <textarea class="form-control" rows="4" placeholder="Write something about you...(optional)"></textarea>
+    </div>
+
+    <div class="section-divider"></div>
+
+
+    <h6 class="mb-3">Contact information</h6>
+    <div class="mb-3">
+     
+      <div class="input-group">
+        <span class="input-group-text">+91</span>
+        <input type="tel" class="form-control" placeholder="Enter phone number">
+      </div>
+    </div>
+    <div class="mb-3">
+    
+      <input type="email" class="form-control" placeholder="Enter your email">
+    </div>
+
+    <div class="section-divider"></div>
+
+    
+    <h6 class="mb-3">Additional information</h6>
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+      <div>
+        <p class="mb-0"><strong>Google</strong></p>
+        <small class="text-muted">Link your Google account to seamlessly use your contact list.</small>
+      </div>
+      <button class="btn btn-outline-primary">Unlink</button>
+    </div>
+
+
+    <div class="section-divider"></div>
+    <div class="d-flex justify-content-between action-buttons">
+      <a href="#" class="btn btn-danger  fw-semibold text-decoration-none">Discard</a>
+      <button class="btn  fw-semibold">Save changes</button>
+    </div>
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
