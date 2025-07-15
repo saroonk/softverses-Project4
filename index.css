@@ -314,9 +314,52 @@ html, body {
     font-size: 13px;
 
   }
+
 }
 
 
+@media (max-width: 400px) {
+        .post-ad-btn {
+            
+            padding: 9px 20px !important;
+           
+        }
+
+
+      .navbar-brand.logo {
+        width: 70px !important;
+        height: auto;
+    }
+
+
+
+        .category-dropdown .dropdown-menu {
+            min-width: 40px !important;
+      
+        }
+
+        .category-dropdown .dropdown-item {
+            padding: 8px 14px !important;
+            font-size: 11px !important;
+        }
+
+
+        .dropdown-toggle-btn {
+  
+  margin-left: 2px !important;
+  font-size: 10px !important;
+  
+}
+
+
+
+
+.dropdown-menu {
+  font-size: 10px !important;
+  min-width: 140px !important;
+
+}
+}
 
 
 
@@ -359,7 +402,7 @@ html, body {
   color: #000;
 }
 
-/* Bootstrap dropdown styling override */
+
 .dropdown-menu {
   font-size: 14px;
   min-width: 160px;
@@ -708,6 +751,9 @@ html, body {
         width: 90px;
         height: auto;
     }
+
+
+      
 }
 
 
