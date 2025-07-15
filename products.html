@@ -64,6 +64,7 @@
     </div>
 
 
+
     <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
         <div class="container">
             <!-- <a class="navbar-brand logo" href="#"> -->
@@ -110,15 +111,68 @@
             </div>
 
 
+<form class="search-form d-none d-lg-flex" action="/search" method="GET">
+  <input type="text" name="q" class="search-input" placeholder="Search Products" required />
+  <button type="submit" class="searchs-btn">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
+
+
+
+
+
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             
             <a href="#" class="post-ad-btn">POST AD</a>
+
+
+            <div class="d-none d-lg-flex">
+                          <a href="/login" class="login-btn d-flex align-items-center ms-3">
+              <i class="fas fa-user me-2"></i>
+              Login
+            </a>
+            </div>
+
+
+<!-- 
+<div class="dropdown user-dropdown hover-dropdown ms-3">
+
+  <a href="/profile" class="user-toggle d-flex align-items-center" id="userDropdown">
+    <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Profile" class="user-img" />
+  </a>
+
+  <button class="dropdown-toggle-btn" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fas fa-chevron-down"></i>
+  </button>
+
+
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+    <li><a class="dropdown-item" href="/profile">View Profile</a></li>
+    <li><a class="dropdown-item" href="/my-ads">My Ads</a></li>
+    <li><a class="dropdown-item" href="/settings">Settings</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="/logout">Logout</a></li>
+  </ul>
+</div> -->
+
+
+
         </div>
 
         <div class="collapse navbar-collapse" id="mobileNavMenu">
             <ul class="navbar-nav ms-auto">
+
+              <form class="search-form d-block d-lg-none mx-4" action="/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Search Products" required />
+                <button type="submit" class="searchs-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+
+
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         <i class="fas fa-map-marker-alt"></i>
@@ -143,6 +197,16 @@
                         Need Help
                     </a>
                 </li>
+
+
+
+              <hr>
+              <div class=" d-flex d-lg-none mx-4 mt-3 text-center justify-content-center">
+                  <a href="/login" class="login-btn   ">
+                    <i class="fas fa-user me-2"></i>
+                    Login
+                  </a>
+              </div>
             </ul>
         </div>
     </nav>
@@ -596,30 +660,34 @@
 
 
       <div class="col-6 col-md-2 px-5">
-        <h6 class="fw-bold mb-4">Top Categories</h6>
-        <ul class="list-unstyled text-muted">
-          <li>TV/Televisions</li>
-          <li>Computers</li>
-          <li>Laptops</li>
-          <li>Mobiles & Tablets</li>
-          <li>Audios</li>
-          <li>Cameras</li>
-          <li>Gadget</li>
-          <li>Sport Equipments</li>
-          <li>Office</li>
-          <li>Smart Home</li>
-        </ul>
-      </div>
+  <h6 class="fw-bold mb-4">Top Categories</h6>
+  <ul class="list-unstyled">
+    <li><a href="#" class="text-muted">TV/Televisions</a></li>
+    <li><a href="#" class="text-muted">Computers</a></li>
+    <li><a href="#" class="text-muted">Laptops</a></li>
+    <li><a href="#" class="text-muted">Mobiles & Tablets</a></li>
+    <li><a href="#" class="text-muted">Audios</a></li>
+    <li><a href="#" class="text-muted">Cameras</a></li>
+    <li><a href="#" class="text-muted">Gadget</a></li>
+    <li><a href="#" class="text-muted">Sport Equipments</a></li>
+    <li><a href="#" class="text-muted">Office</a></li>
+    <li><a href="#" class="text-muted">Smart Home</a></li>
+  </ul>
+</div>
+
 
       <div class="col-6 col-md-2 px-5">
         <h6 class="fw-bold mb-4">Company</h6>
         <ul class="list-unstyled text-muted">
-          <li>About Maattaam</li>
-          <li>Contact</li>
-          <li>Career</li>
-          <li>Blog</li>
-          <li>Sitemap</li>
-   
+          <li><a href="" class="text-muted">About Maattaam</a></li>
+          <li><a href="" class="text-muted">Contact</a></li>
+          <li><a href="" class="text-muted">Career</a></li>
+          <li><a href="" class="text-muted">Blog</a></li>
+          <li><a href="" class="text-muted">Sitemap</a></li>
+          
+          
+          
+
         </ul>
       </div>
 
@@ -627,15 +695,36 @@
       <div class="col-6 col-md-2 px-5">
         <h6 class="fw-bold mb-4">Help Center</h6>
         <ul class="list-unstyled text-muted">
-          <li>Customer Service</li>
-          <li>Policy</li>
-          <li>Terms & Conditions</li>
-          <li>Track Order</li>
-          <li>FAQs</li>
-          <li>My Account</li>
-          <li>Product Support</li>
+          <li><a href="" class="text-muted">Customer Service</a></li>
+          <li><a href="" class="text-muted">Policy</a></li>
+          <li><a href="" class="text-muted">Terms & Conditions</a></li>
+          <li><a href="" class="text-muted">Track Order</a></li>
+          <li><a href="" class="text-muted">FAQs</a></li>
+          <li><a href="" class="text-muted">My Account</a></li>
+          <li><a href="" class="text-muted">Product Support</a></li>
         </ul>
       </div>
+
+           <div class="col-6 col-md-2 px-5">
+  <h6 class="fw-bold mb-4">Location</h6>
+  <ul class="list-unstyled text-muted">
+    <li><a href="#" class="text-muted">Thiruvananthapuram</a></li>
+    <li><a href="#" class="text-muted">Kollam</a></li>
+    <li><a href="#" class="text-muted">Pathanamthitta</a></li>
+    <li><a href="#" class="text-muted">Alappuzha</a></li>
+    <li><a href="#" class="text-muted">Kottayam</a></li>
+    <li><a href="#" class="text-muted">Idukki</a></li>
+    <li><a href="#" class="text-muted">Ernakulam</a></li>
+    <li><a href="#" class="text-muted">Thrissur</a></li>
+    <li><a href="#" class="text-muted">Palakkad</a></li>
+    <li><a href="#" class="text-muted">Malappuram</a></li>
+    <li><a href="#" class="text-muted">Kozhikode</a></li>
+    <li><a href="#" class="text-muted">Wayanad</a></li>
+    <li><a href="#" class="text-muted">Kannur</a></li>
+    <li><a href="#" class="text-muted">Kasaragod</a></li>
+  </ul>
+</div>
+
 
       
 
@@ -693,7 +782,7 @@ window.addEventListener('scroll', function() {
     const mainNavbar = document.getElementById('mainNavbar');
     const welcomeSection = document.getElementById('welcomeSection');
     
-    // Only use welcomeSection height now
+
     const offsetTop = welcomeSection.offsetHeight;
 
     if (window.pageYOffset >= offsetTop) {

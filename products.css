@@ -384,7 +384,6 @@ html, body {
   transform: scale(1.05);
 }
 
-/* Dropdown toggle icon button */
 .dropdown-toggle-btn {
   background: transparent;
   border: none;
@@ -450,7 +449,6 @@ html, body {
     }
 }
 
-/* Ensure .container doesn't wrap on small screens */
 .main-navbar .container {
     display: flex;
     align-items: center;
@@ -979,6 +977,12 @@ html, body {
 .footer ul li {
   margin-bottom: 6px;
   font-size: 14px;
+}
+
+
+.footer ul li a{
+  /* color: grey; */
+  text-decoration: none;
 }
 
 .footer .social-icons a {
