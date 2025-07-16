@@ -10,11 +10,202 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="postad.css">
 
 </head>
 <body>
+
+
+
+
+
+
+  
+      <div class="welcome-section" id="welcomeSection">
+        <div class="welcome-content">
+            <div class="welcome-text">
+                Welcome to Maattaam India’s First user friendly marketplace
+            </div>
+            <div class="right-section">
+                <div class="follow-us d-flex">
+                    <span>Follow us:</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+        <div class="container">
+            <!-- <a class="navbar-brand logo" href="#"> -->
+                <img src="images/Maatam_Full_logo.png" class="navbar-brand logo img-fluid" alt="">
+            <!-- </a> -->
+            
+            <div class="nav-center d-flex align-items-center">
+   
+                <div class="dropdown category-dropdown ">
+                    <button class="btn category-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- <i class="fas fa-bars"></i> -->
+                        All Category
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Electronics</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Fashion</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-home"></i> Home & Garden</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-car"></i> Automotive</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-gamepad"></i> Sports & Games</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-book"></i> Books</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-heartbeat"></i> Health & Beauty</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-baby"></i> Baby & Kids</a></li>
+                    </ul>
+                </div>
+  
+                <div class="nav-links d-none d-lg-flex">
+                    <!-- <a href="#" class="nav-link me-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Track Order
+                    </a> -->
+                    <!-- <a href="#" class="nav-link me-3">
+                        <i class="fas fa-balance-scale"></i>
+                        Compare
+                    </a> -->
+                    <a href="#" class="nav-link me-3">
+                        <i class="fas fa-headset"></i>
+                        Customer Support
+                    </a>
+                    <a href="#" class="nav-link me-3">
+                        <i class="fas fa-question-circle"></i>
+                        Need Help
+                    </a>
+                </div>
+            </div>
+
+
+<form class="search-form d-none d-lg-flex" action="/search" method="GET">
+  <input type="text" name="q" class="search-input" placeholder="Search Products" required />
+  <button type="submit" class="searchs-btn">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
+
+
+
+
+
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <a href="#" class="post-ad-btn">POST AD</a>
+
+
+            <div class="d-none d-lg-flex">
+                          <a href="/login" class="login-btn d-flex align-items-center ms-3">
+              <i class="fas fa-user me-2"></i>
+              Login
+            </a>
+            </div>
+
+
+<!-- 
+<div class="dropdown user-dropdown hover-dropdown ms-3">
+
+  <a href="/profile" class="user-toggle d-flex align-items-center" id="userDropdown">
+    <img src="images/141fc03a7e440b94a957f6b9579306dd2108539b.png" alt="Profile" class="user-img" />
+  </a>
+
+  <button class="dropdown-toggle-btn" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fas fa-chevron-down"></i>
+  </button>
+
+
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+    <li><a class="dropdown-item" href="/profile">View Profile</a></li>
+    <li><a class="dropdown-item" href="/my-ads">My Ads</a></li>
+    <li><a class="dropdown-item" href="/settings">Settings</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="/logout">Logout</a></li>
+  </ul>
+</div> -->
+
+
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="mobileNavMenu">
+            <ul class="navbar-nav ms-auto">
+
+              <form class="search-form d-block d-lg-none mx-4" action="/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Search Products" required />
+                <button type="submit" class="searchs-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Track Order
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-balance-scale"></i>
+                        Compare
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-headset"></i>
+                        Customer Support
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-question-circle"></i>
+                        Need Help
+                    </a>
+                </li>
+
+
+
+              <hr>
+              <div class=" d-flex d-lg-none mx-4 mt-3 text-center justify-content-center">
+                  <a href="/login" class="login-btn   ">
+                    <i class="fas fa-user me-2"></i>
+                    Login
+                  </a>
+              </div>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 <div class="container py-5">
   <h2 class="text-center mb-4">POST YOUR AD</h2>
@@ -63,6 +254,138 @@
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row gy-4">
+
+
+      <div class="col-md-4 px-5">
+        <div class="footer-logo mb-3">
+          <img src="images/Maataam1.png" alt="Logo" style="max-height: 40px;">
+        </div>
+        <p class="text-muted mb-1">HOTLINE 24/7</p>
+        <p class="fw-bold y mb-2" style="color: #4B3EC4;">(025) 3686 25 16</p>
+        <p class="text-muted mb-1">257 Thatcher Road St, Brooklyn, Manhattan, NY 10092</p>
+        <p class="text-muted">contact@swateletrco.com</p>
+
+        <div class="social-icons d-flex gap-2 mt-3">
+          <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-2 px-5">
+  <h6 class="fw-bold mb-4">Top Categories</h6>
+  <ul class="list-unstyled">
+    <li><a href="#" class="text-muted">TV/Televisions</a></li>
+    <li><a href="#" class="text-muted">Computers</a></li>
+    <li><a href="#" class="text-muted">Laptops</a></li>
+    <li><a href="#" class="text-muted">Mobiles & Tablets</a></li>
+    <li><a href="#" class="text-muted">Audios</a></li>
+    <li><a href="#" class="text-muted">Cameras</a></li>
+    <li><a href="#" class="text-muted">Gadget</a></li>
+    <li><a href="#" class="text-muted">Sport Equipments</a></li>
+    <li><a href="#" class="text-muted">Office</a></li>
+    <li><a href="#" class="text-muted">Smart Home</a></li>
+  </ul>
+</div>
+
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Company</h6>
+        <ul class="list-unstyled text-muted">
+          <li><a href="" class="text-muted">About Maattaam</a></li>
+          <li><a href="" class="text-muted">Contact</a></li>
+          <li><a href="" class="text-muted">Career</a></li>
+          <li><a href="" class="text-muted">Blog</a></li>
+          <li><a href="" class="text-muted">Sitemap</a></li>
+          
+          
+          
+
+        </ul>
+      </div>
+
+
+      <div class="col-6 col-md-2 px-5">
+        <h6 class="fw-bold mb-4">Help Center</h6>
+        <ul class="list-unstyled text-muted">
+          <li><a href="" class="text-muted">Customer Service</a></li>
+          <li><a href="" class="text-muted">Policy</a></li>
+          <li><a href="" class="text-muted">Terms & Conditions</a></li>
+          <li><a href="" class="text-muted">Track Order</a></li>
+          <li><a href="" class="text-muted">FAQs</a></li>
+          <li><a href="" class="text-muted">My Account</a></li>
+          <li><a href="" class="text-muted">Product Support</a></li>
+        </ul>
+      </div>
+
+           <div class="col-6 col-md-2 px-5">
+  <h6 class="fw-bold mb-4">Location</h6>
+  <ul class="list-unstyled text-muted">
+    <li><a href="#" class="text-muted">Thiruvananthapuram</a></li>
+    <li><a href="#" class="text-muted">Kollam</a></li>
+    <li><a href="#" class="text-muted">Pathanamthitta</a></li>
+    <li><a href="#" class="text-muted">Alappuzha</a></li>
+    <li><a href="#" class="text-muted">Kottayam</a></li>
+    <li><a href="#" class="text-muted">Idukki</a></li>
+    <li><a href="#" class="text-muted">Ernakulam</a></li>
+    <li><a href="#" class="text-muted">Thrissur</a></li>
+    <li><a href="#" class="text-muted">Palakkad</a></li>
+    <li><a href="#" class="text-muted">Malappuram</a></li>
+    <li><a href="#" class="text-muted">Kozhikode</a></li>
+    <li><a href="#" class="text-muted">Wayanad</a></li>
+    <li><a href="#" class="text-muted">Kannur</a></li>
+    <li><a href="#" class="text-muted">Kasaragod</a></li>
+  </ul>
+</div>
+
+
+      
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<section class="footer-bottom-section py-3">
+  <div class="container">
+    <div class="row align-items-center justify-content-center text-center text-md-start py-md-3">
+
+      <div class="col-md-4 mb-2 mb-md-0">
+        <small class="text-muted">© 2024 Maattaam. All Rights Reserved</small>
+      </div>
+
+
+      <!-- <div class="col-md-4 d-flex justify-content-center flex-wrap gap-3">
+        <img src="images/4f88470ef7ca7089c358161cd638255e61147b79.png" alt="Payment 1" class="payment-icon" />
+        <img src="images/6bd6f9a9a1d8c62348529d351a6bbed14866b496.png" alt="Payment 2" class="payment-icon" />
+        <img src="images/5b9d40ecdd1b5c0980dfc3ae57c167489f831783.png" alt="Payment 3" class="payment-icon" />
+        <img src="images/3b5e4d8866baeaa152d51cf08f5031769fbf6263.png" alt="Payment 4" class="payment-icon" />
+        <img src="images/647ccd9eac28cd11f9fb6cd49c52dea670811cb9.png" alt="Payment 5" class="payment-icon" />
+      </div> -->
+    </div>
+  </div>
+</section>
+
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -95,6 +418,31 @@
   window.onload = () => {
     showSubcategories('cars');
   };
+
+
+
+
+
+
+
+
+  
+window.addEventListener('scroll', function() {
+    const mainNavbar = document.getElementById('mainNavbar');
+    const welcomeSection = document.getElementById('welcomeSection');
+    
+
+    const offsetTop = welcomeSection.offsetHeight;
+
+    if (window.pageYOffset >= offsetTop) {
+        mainNavbar.classList.add('fixed');
+        document.body.style.paddingTop = mainNavbar.offsetHeight + 'px';
+    } else {
+        mainNavbar.classList.remove('fixed');
+        document.body.style.paddingTop = '0';
+    }
+});
+
 </script>
 
 </body>

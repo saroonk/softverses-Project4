@@ -832,19 +832,19 @@ html, body {
     }
 
     .read-more-btn {
-      background: #000;
+      background: #F57E20;
       color: #fff;
       padding: 10px 25px;
       border-radius: 25px;
       text-decoration: none;
       font-weight: 500;
-      font-family: 'Rubik';
+
       display: inline-block;
       transition: 0.3s ease;
     }
 
     .read-more-btn:hover {
-      background: #555;
+      background: #cd7029;
       transform: translateY(-2px);
     }
 
